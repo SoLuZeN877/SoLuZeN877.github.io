@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cumple</title>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="corazon.ico">
+    <link rel="stylesheet" href="cumple.css">
+
+     <script>
+        function verificarContraseña() {
+        	const usuario = document.getElementById("usuario").value;
+            const usuarioCorrecto = "Parchís";
+            const contraseña = document.getElementById("contraseña").value;
+            const contraseñaCorrecta = "Te amo";
+
+            if (usuario === usuarioCorrecto && contraseña === contraseñaCorrecta) {
+                window.location.href = "Vídeo.html";
+            } else {
+                alert("Usuario o contraseña incorrectos, inténtalo de nuevo.");
+            }
+
+            
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div class="formulario">
+
+        <h1>Iniciar sesión</h1>
+
+        <div class="inputs">
+        	<div class="username">
+       			<input type="text" id="usuario" placeholder="Usuario">
+       		</div>
+
+       		<div class="password">
+        		<input type="password" id="contraseña" required placeholder="Contraseña">
+        	</div>
+    	</div>
+
+        <button onclick="verificarContraseña()">Entrar</button>
+            
+    </div>
+
+</body>
+</html>
