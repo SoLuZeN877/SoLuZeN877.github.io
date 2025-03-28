@@ -15,3 +15,20 @@ video {
 	transform: translate(-50%,-50%);
 	width: 500px;
 }
+
+button {
+	border-radius: 8px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	background: #6C3483;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	outline: none;
+	height: 60px;
+	border-color: white;
+	font-family: montserrat;
+}
